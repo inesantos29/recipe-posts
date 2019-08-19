@@ -1,39 +1,31 @@
-.item {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    border-radius: 4px;
-    transition: transform 0.2s ease-in;
-    cursor: pointer;
+
+.post-card{
+    display: flex;
+    border: 1px solid #ffc107;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #ffffff;
 }
 
-.item:hover,
-.item:focus {
-    transform: scale(1.02);
+.post-card__img p{
+    text-align: center;
 }
 
-.item > img {
-    width: 100%;
+.post-card__img img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin: auto;
 }
 
-.item > div {
-    padding: 16px 24px;
+.post-card__text{
+    padding-left: 1rem;
 }
 
-.item > div > h4 {
-    font-size: 20px;
-    color: #4a5568;
-    font-weight: 800;
-    line-height: 1.625;
-    margin-bottom: 8px;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-.item > div > p {
-    color: #4a5568;
+.post-card__text h4{
     font-size: 16px;
-    line-height: 1.625;
-    text-align: left;
-    text-transform: capitalize;
+}
+
+.post-card__text p{
+    font-size: 14px;
 }

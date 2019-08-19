@@ -32,6 +32,7 @@ class App extends Component {
 
     render () {
         const { filteredUsers } = this.state;
+        const { posts } = this.state;
         return (
             <>
                 <header>
@@ -42,10 +43,10 @@ class App extends Component {
                 <SearchBar onChange={this.handleSearch}/>
 
                 <Row>
-                    <Col xs={12} md={6}>
-                        <PostList/>
+                    <Col xs={12} md={7}>
+                        <PostList posts={posts} />
                     </Col>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={5}>
                     </Col>
                 </Row>
             </>

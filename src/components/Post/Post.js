@@ -4,14 +4,17 @@ import './style.css';
 
 function Post({ id, name, title, image, instructions }) {
     return (
-        <article tabIndex={0} key={id} className="item">
-            <div>
+        <div className="post-card">
+            <div className="post-card__img">
                 <p>{name}</p>
-                <h4>{title}</h4>
-                <p>{instructions}</p>
-                <img src={image} />
+                <img src={image}/>
             </div>
-        </article>
+
+            <div className="post-card__text">
+                <h4>{title} </h4>
+                <p>{instructions}</p>
+            </div>
+        </div>
     );
 }
 
